@@ -1,4 +1,4 @@
-# portfolio de ações
+# Portfólio de Ações
 Esse repositório apresentará duas propostas para gestão de uma carteira de ações quantitativas (utilizando ações da Bolsa B3) que constituem abordagens bastante diferentes para o problema. Na proposta A será apresentado um algoritmo que é baseado em uma abordagem robusta e contemporânea no mercado financeiro de gerenciamento quantitativo de portfólios. Já na proposta B, será utilizado uma abordagem mais tecnológica e recente no mercado financeiro, utilizando redes neurais recorrentes do tipo LSTM.
 
 Ambas as propostas que serão apresentadas utilizarão a premissa de buscar melhores resultados otimizando o Sharpe Ratio.
@@ -16,7 +16,7 @@ https://www.youtube.com/watch?v=869EIn4ZHxg
 
 Com a adoção dessa carteira sugerida em setembro de 2021, podemos ter uma boa análise do desempenho dos algoritmos.
 
-Proposta A: Otimização de Portfólio através do Método HRP
+# Proposta A: Otimização de Portfólio através do Método HRP
 
 Para o algoritmo da proposta A, utilizaremos um modelo bastante conhecido no mercado financeiro, denominado Hierarchical Risk Parity - ou na tradução: Paridade de Risco
 Hierárquica, ou simplesmente HRP, desenvolvida e detalhada em um paper por Marcos Lopez de Prado
@@ -36,8 +36,7 @@ no período de 15,75%. O retorno do CDI no período da simulação (01/09/2021 a
 Para a elaboração do algoritmo, foi utilizado a biblioteca Riskfolio-lib, e arquivos exemplos do link:
 https://gitub.com/dcajasn/Riskfolio-Lib
 
-Proposta B: Otimização de Portfólio através de Redes Neurais Recorrentes do
-Tipo LSTM
+# Proposta B: Otimização de Portfólio através de Redes Neurais Recorrentes do Tipo LSTM
 
 A escolha por redes neurais recorrentes do tipo LSTM deve-se pelo fato de que na
 previsão de preços, é feito a ponderação entre a memória curta e memória longa da rede
@@ -66,7 +65,7 @@ A rede neural LSTM utilizada na proposta B, poderia ser otimizada variando-se qu
 
 Ambas as propostas terão que ser ampliadas em suas funcionalidades no intuito de ter proteções contra anomalias. Como exemplo, é possível ver no gráfico de retorno da proposta B que se o algoritmo tivesse essa implementação, o drawdown de mais de 48% seria consideravelmente reduzido, inclusive podendo aumentar a lucratividade final da proposta B.
 
-Conclusão do Estudo das Duas Propostas
+# Conclusão do Estudo das Duas Propostas
 
 As propostas apresentadas exploraram duas possibilidades de uma montagem de uma carteira de ativos, não se pode considerar que o resultado obtido é o melhor resultado possível para cada possibilidade, visto que, conforme já mencionado anteriormente, não foi exaurido todas as possibilidades de otimização, em todos os cenários de variações de configurações possíveis das estratégias.
 
