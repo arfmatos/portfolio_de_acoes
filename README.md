@@ -1,4 +1,4 @@
-# portfolio_de_acoes
+# portfolio de ações
 Esse repositório apresentará duas propostas para gestão de uma carteira de ações quantitativas (utilizando ações da Bolsa B3) que constituem abordagens bastante diferentes para o problema. Na proposta A será apresentado um algoritmo que é baseado em uma abordagem robusta e contemporânea no mercado financeiro de gerenciamento quantitativo de portfólios. Já na proposta B, será utilizado uma abordagem mais tecnológica e recente no mercado financeiro, utilizando redes neurais recorrentes do tipo LSTM.
 
 Ambas as propostas que serão apresentadas utilizarão a premissa de buscar melhores resultados otimizando o Sharpe Ratio.
