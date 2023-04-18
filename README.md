@@ -20,7 +20,7 @@ Com a adoção dessa carteira sugerida em setembro de 2021, podemos ter uma boa 
 # Proposta A: Otimização de Portfólio através do Método HRP
 
 Para o algoritmo da proposta A, utilizaremos um modelo bastante conhecido no mercado financeiro, denominado Hierarchical Risk Parity - ou na tradução: Paridade de Risco
-Hierárquica, ou simplesmente HRP, desenvolvida e detalhada em um paper por Marcos Lopez de Prado
+Hierárquica, ou simplesmente HRP, desenvolvida e detalhada em um paper por Marcos Lopez de Prado.
 
 O método HRP utiliza o aprendizado de máquina para otimizar os portfólios tendo como
 característica a criação de grafos, na forma de árvores hierárquicas de risco (dendogramas), em
@@ -30,11 +30,11 @@ O método HRP pode ser considerado uma evolução em relação ao método denomi
 Algoritmo de linha crítica (CLA), visto que, quando ambos os métodos são submetidos ao teste
 de Monte Carlo, o HRP apresenta menor variância fora da amostra (treinamento).
 
-O código utilizado para a proposta A pode ser visto no ANEXO I. O código apresentou
+O código utilizado para a proposta A pode ser visto no arquivo "PROPOSTA_A_HRP.ipynb". O código apresentou
 um retorno de investimento de 18,96% anualizado e apresentou um drawdown máximo medido
 no período de 15,75%. O retorno do CDI no período da simulação (01/09/2021 a 30/09/2022) foi de 10,23%.
 
-Para a elaboração do algoritmo, foi utilizado a biblioteca Riskfolio-lib, e arquivos exemplos do link:
+Para a elaboração do algoritmo foi utilizado a biblioteca Riskfolio-lib e seus exemplos contidos no endereço:
 https://gitub.com/dcajasn/Riskfolio-Lib
 
 # Proposta B: Otimização de Portfólio através de Redes Neurais Recorrentes do Tipo LSTM
@@ -58,7 +58,7 @@ O código apresentou um retorno de investimento de 10,01% e apresentou um drawdo
 
 Podemos observar que a proposta A apresentou um resultado bastante expressivo, quando observamos o retorno de investimento em referência ao desempenho do CDI.
 
-A proposta B apresentou um resultado semelhante ao desempenho do CDI
+A proposta B apresentou um resultado semelhante ao desempenho do CDI.
 
 Há que se ressaltar também, que a alocação de ativos, baseada na carteira mensal da BB Asset deveria ser trocada mensalmente, conforme novas ações são sugeridas ao longo dos meses, isso poderia gerar um aumento considerável na lucratividade.
 
@@ -71,6 +71,8 @@ Ambas as propostas terão que ser ampliadas em suas funcionalidades no intuito d
 As propostas apresentadas exploraram duas possibilidades de uma montagem de uma carteira de ativos, não se pode considerar que o resultado obtido é o melhor resultado possível para cada possibilidade, visto que, conforme já mencionado anteriormente, não foi exaurido todas as possibilidades de otimização, em todos os cenários de variações de configurações possíveis das estratégias.
 
 Mas é possível notar que a proposta B possui um algoritmo mais complexo, observando mais detalhes do problema, necessitando de menos implementação de código para ser ter um algoritmo operacional que possa ser utilizado no mercado real. No caso da proposta B, uma otimização mais trabalhada poderia entregar um resultado semelhante ou até superior ao da proposta A.
+
+A proposta B é melhor estruturada, visto que possui arquivos distintos para backtest e gerenciamento de risco, além de possuir inclusive variações pré-setadas de camadas e número de neurônios, que podem ser usadas a qualquer tempo, de forma a encontrar uma configuração que melhor se adapte aos ativos selecionados. 
 
 O modelo da proposta B também leva vantagem da proposta A no quesito tipo de alocação dos ativos, visto que a quantidade de cada ativo varia dinamicamente com o passar dos meses (alocação estratégica), podendo prever mudanças de tendência nos ativos, enquanto que na proposta A, a quantidade de cada ativo é mantida ao longo dos 12 meses seguintes (alocação tática).
 
